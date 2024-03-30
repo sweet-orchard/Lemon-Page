@@ -6,5 +6,6 @@
 <img width="1090" alt="Screenshot 2024-03-26 at 15 48 35" src="https://github.com/sweet-orchard/Lemon-Page/assets/146839131/380a3710-ec2d-4411-8787-5c08ab423d24">
 
 
-RECENT UPDATES
+</br>RECENT UPDATES
+</br>
 <img width="301" alt="Screenshot 2024-03-30 at 19 04 24" src="https://github.com/sweet-orchard/Lemon-Page/assets/146839131/396b9688-3b42-4244-bbb0-201dc21d7697">
