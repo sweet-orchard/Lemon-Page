@@ -17,6 +17,7 @@
 
 body{
     background-color: #080d1a;
+    overflow-x: hidden;
 }
 
 
@@ -239,7 +240,7 @@ li{
     transition: all 0.2s ease;
 }
 
-@media(max-width: 638px){
+@media(max-width: 800px){
     .nav-links{
         opacity: 0;
 
@@ -263,6 +264,76 @@ li{
     .footer-list{
         display: none;
     }
+
+}
+
+
+.menu-icon{
+    display: none;
+}
+
+.ham-menu{
+    display: none;
+}
+
+
+@media(max-width: 50em){
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 50px;
+        color: white;
+        z-index: 500;
+    }
+
+    .ham-menu a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .ham-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 60px 30px 0 40px;
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background-color: #ffd60a;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+
+        transform: translateX(100%);
+        transition: all 350ms ease-in;
+    }
+
+
+    #close-menu-icon{
+        z-index: 1010;
+        position: fixed;
+        top: 15px;
+        right: 50px;
+        display: none;
+        transition: all 350ms ease-out;
+    }
+
+
+    .ham-menu[data-visibility="true"]{
+        transform: translateX(0);
+        transition: all 350ms ease-out;
+    }
+
+    #close-menu-icon[data-visibility="true"]{
+        transition: all 350ms ease;
+        display: block;
+    }
+    /* .moving-ham-bar{
+        transform: translateX(100%);
+    } */
 
 }
 
